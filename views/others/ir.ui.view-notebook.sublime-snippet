@@ -1,7 +1,9 @@
 <snippet>
     <content><![CDATA[
 <notebook>
-    ${0}
+  <page string="${1:Title}" name="${2:page_${1/(([a-zA-Z])|([^A-Za-z]))/(?2:\l$2)(?3:\_)/g}}">
+    <field name="${3}" nolabel="1"/>
+  </page>
 </notebook>
 ]]></content>
     <tabTrigger>notebook</tabTrigger>
