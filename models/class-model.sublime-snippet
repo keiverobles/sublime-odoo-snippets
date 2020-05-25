@@ -2,17 +2,12 @@
     <content><![CDATA[
 class ${1:ModelName}(models.Model):
     """ ${2:The summary line for a class docstring should fit on one line.}
-
-    Fields:
-      name (Char): Human readable name which will identify each record.
-
     """
 
     _name = '${3:${1/((^[A-Z])|([A-Z]))/(?2:\l$2)(?3:\.\l$3)/g}}'
     _description = u'${4:${1/((^[A-Z])|([A-Z]))/(?2:\u$2)(?3:\ \l$3)/g}}'
-
-    _rec_name = 'name'
-    _order = 'name ASC'
+    _rec_name = '${5:name}'
+    _order = '${6:id} DESC'
 
     name = fields.Char(
         string='Name',
