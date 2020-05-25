@@ -6,6 +6,7 @@ def _onchange_${1}(self):
         'warning': {
             'title': '${2:Text of the title}',
             'message': '${3:Text of the message}'
+            'type': '${4:notification}'
         }
     }${0}
 ]]></content>
