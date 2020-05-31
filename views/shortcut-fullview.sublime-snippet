@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 <!-- VIEWS (singular): "${1:Human readable name}"
 
   - Model·········: ${2:model}
@@ -20,7 +20,7 @@
   <field name="priority" eval="${7/(.)/\1/g}"/>
   <field name="active" eval="True"/>
   <field name="arch" type="xml">
-    <tree string="${1/(.)/\1/g}s" create="1" delete="1" edit="1" editable="top/bottom">
+    <tree>
       <field name="${3/(.)/\1/g}"/>${0}
     </tree>
   </field>
@@ -33,7 +33,7 @@
   <field name="priority" eval="${7/(.)/\1/g}"/>
   <field name="active" eval="True"/>
   <field name="arch" type="xml">
-    <form string="${1/(.)/\1/g}" create="1" delete="1" edit="1">
+    <form string="${1/(.)/\1/g}">
       <sheet>
         <div class="oe_title">
           <label for="${3/(.)/\1/g}" class="oe_edit_only"/>
@@ -53,7 +53,7 @@
   <field name="priority" eval="${7/(.)/\1/g}"/>
   <field name="active" eval="True"/>
   <field name="arch" type="xml">
-    <search string="Filter ${1/(.)/\1/g}s">
+    <search string="Filter ${1/(.)/\1/g}">
       <field name="${3/(.)/\1/g}"/>
     </search>
   </field>
@@ -85,7 +85,7 @@
   action="${2/\./\_/g}_action"
   sequence="${8/(.)/\1/g}"/>
 ]]></content>
-    <tabTrigger>fullview</tabTrigger>
-    <scope>text.xml</scope>
-    <description>Views: tree, form, search; act_window and menu</description>
+  <tabTrigger>fullview</tabTrigger>
+  <scope>text.xml</scope>
+  <description>Views: tree, form, search; act_window and menu</description>
 </snippet>
