@@ -1,12 +1,9 @@
 <snippet>
     <content><![CDATA[
 _sql_constraints = [
-    (
-        '${1:name}',
-        '${2:constraint}',
-        _(u'${3:message}')
-    )${4}
-]${0}
+    ('${1:name}_unique', 'unique (${2:${1}})', _('${3:${1/((^.)|(_+))/(?2:\u$2)(?3:\ )/g} already exists !}'))${4}
+]
+${0}
 ]]></content>
     <tabTrigger>_sql_constraints</tabTrigger>
     <scope>source.python</scope>

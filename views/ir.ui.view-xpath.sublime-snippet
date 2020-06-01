@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-<xpath expr="${1://field[@name='name']}" position="${2:after}">
-    ${0}
+<xpath expr="${4://${1:field}[@${2:name}='${3:name}']}" position="${5:after}">
+  ${0}
 </xpath>
 ]]></content>
     <tabTrigger>xpath</tabTrigger>
