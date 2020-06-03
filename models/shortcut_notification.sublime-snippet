@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+return {
+    'type': 'ir.actions.client',
+    'tag': 'display_notification',
+    'target': 'new',
+    'params': {
+        'title': '${1:Title}',
+        'message': '${2:Message}',
+        'sticky': False,
+        'type': '${3:warning}',
+    }
+}
+${0}
+]]></content>
+    <tabTrigger>notification</tabTrigger>
+    <scope>source.python</scope>
+    <description>Return pop-up of notification</description>
+</snippet>
