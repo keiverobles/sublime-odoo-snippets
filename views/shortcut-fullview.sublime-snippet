@@ -1,6 +1,7 @@
 <snippet>
   <content><![CDATA[
-<!-- VIEWS (singular): "${1:Human readable name}"
+<!-- ${1/(.)/\1/g} -->
+${10:<!-- VIEWS (singular): "${1:Human readable name}"
 
   - Model·········: ${2:model}
   - _rec_name·····: ${3:name}
@@ -11,7 +12,7 @@
   - Menu Sequence·: ${8:10}
   - Action help···: ${9:Something about ${2/(.)/$1/g}}
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
+}
 <record id="${2/\./\_/g}_view_tree" model="ir.ui.view">
   <field name="name">${2/\.+/\./g}.tree</field>
   <field name="model">${2/\.+/\./g}</field>
@@ -69,7 +70,7 @@
   <field name="search_view_id" ref="${2/\./\_/g}_view_search"/>
   <field name="help" type="html">
     <p class="oe_view_nocontent_create o_view_nocontent_smiling_face">
-      Click to add new ${1/(.)/\1/g}
+      Click in "Create" to add new ${1/(.)/\1/g}
     </p><p>
       ${9/(.)/\1/g}
     </p>
