@@ -25,24 +25,19 @@
 {
     'name': '${1:Human readable name}',
     'summary': '${2:${1}} Module Project',
-    'version': '1.0',
-
+    'version': '8.0.1.0.0',
     'description': """
 ${3:${1}} Module Project.
 ==============================================
 
-${4}
+(deprecated)${4}
     """,
-
     'author': '${5:$TM_FULLNAME}',
     'maintainer': '${5}',
     'contributors': ['${6:${5} <${5}@gmail.com>}'],
-
     'website': 'http://www.gitlab.com/${7:${5}}',
-
     'license': 'AGPL-3',
     'category': 'Uncategorized',
-
     'depends': [
         'base'
     ],
@@ -64,8 +59,8 @@ ${4}
     ],
     'test': [
     ],
-
     'installable': True
+    'application': True
 }${0}
 ]]></content>
     <tabTrigger>__openerp__</tabTrigger>
