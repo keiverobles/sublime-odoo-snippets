@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+button class="oe_stat_button" type="object" name="action_view_${1:name}" icon="fa-${2:info}" groups="${3:base.group_user}" context="\{${4}\}">
+  <field string="${5:Name}" name="${6:field}_count" widget="statinfo"/>
+</button>${0}
+]]></content>
+  <tabTrigger>button_stat</tabTrigger>
+  <scope>text.xml</scope>
+  <description>Stat Button used inside button box</description>
+</snippet>
