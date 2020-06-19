@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+domain="[('${1:field}', '${2:operator}', ${3:value})]"${0}
+]]></content>
+  <tabTrigger>domain</tabTrigger>
+  <scope>text.xml</scope>
+  <description>Common XML attribute for domain in fields</description>
+</snippet>
