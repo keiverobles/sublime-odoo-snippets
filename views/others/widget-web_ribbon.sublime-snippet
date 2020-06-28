@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('${1:active}', '=', True)]}"/>${0}
+widget name="web_ribbon" title="${1:Archived}" bg_color="bg-danger" attrs="{'invisible': [('${2:active}', '=', True)]}"/>${0}
 ]]></content>
   <tabTrigger>widget_web_ribbon</tabTrigger>
   <scope>text.xml</scope>
