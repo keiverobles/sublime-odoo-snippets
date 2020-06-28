@@ -10,7 +10,7 @@ class ${1:ModelName}(models.Model):
 
     name = fields.Char(string='Name', size=50, index=True)
     active = fields.Boolean(string='Active', default=True)
-    ${0}
+${0}
 ]]></content>
     <tabTrigger>class</tabTrigger>
     <scope>source.python</scope>
