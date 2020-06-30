@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-!-- ${1/(.)/\1/g} -->
-${10:<!-- VIEWS (singular): "${1:Human readable name}"
+!-- ${1/(.)/\1/g} -->${10:
+<!-- VIEWS (singular): "${1:Human readable name}"
 
   - Model·········: ${2:model}
   - _rec_name·····: ${3:name}

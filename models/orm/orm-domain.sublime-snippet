@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${4}domain([('${1:field}', '${2:operator}', ${3:value})])${0}
+]]></content>
+    <tabTrigger>domain</tabTrigger>
+    <scope>source.python</scope>
+    <description>Adds the domain condition</description>
+</snippet>

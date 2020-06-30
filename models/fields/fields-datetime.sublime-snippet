@@ -5,7 +5,7 @@ ${1:field_name} = fields.Datetime(
     required=${3:False},
     readonly=${4:False},
     index=${5:False},
-    default=${6:fields.datetime.now()},
+    default=${6:fields.Datetime.now},
     help=${7:False}
 )${0}
 ]]></content>
