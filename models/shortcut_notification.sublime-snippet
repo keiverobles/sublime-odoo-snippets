@@ -8,7 +8,7 @@ return {
         'title': '${1:Title}',
         'message': '${2:Message}',
         'sticky': False,
-        'type': '${3:warning}',
+        'type': '${3:warning/info/danger}',
     }
 }
 ${0}
