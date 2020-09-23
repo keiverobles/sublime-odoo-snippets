@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+""" ${1:Docstring}. """
+]]></content>
+    <tabTrigger>docstring</tabTrigger>
+    <scope>source.python</scope>
+    <description>Call Python Docstring</description>
+</snippet>
