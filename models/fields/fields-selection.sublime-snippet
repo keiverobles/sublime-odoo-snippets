@@ -1,13 +1,14 @@
 <snippet>
     <content><![CDATA[
-${1:field_name} = fields.Selection(
-    string='${2:${1/((^.)|(_(.)))/(?2:\u$2)(?3:\ $4)/g}}',
-    required=${3:False},
-    readonly=${4:False},
-    index=${5:False},
-    default=${6:False},
-    help=${7:False},
-    selection=[('${8:valor1}', '${9:${8/(.)(.+)/\u$1$2/g}}'), ('${10:valor2}', '${11:${10/(.)(.+)/\u$1$2/g}}')]
+${1:field_name} = fields.Selection([
+    ('${2:valor1}', '${3:${2/(.)(.+)/\u$1$2/g}}'),
+    ('${4:valor2}', '${5:${4/(.)(.+)/\u$1$2/g}}')
+    ], string='${6:${1/((^.)|(_(.)))/(?2:\u$2)(?3:\ $4)/g}}',
+    required=${7:False},
+    readonly=${8:False},
+    index=${9:False},
+    default=${10:False},
+    help=${11:False}
 )${0}
 ]]></content>
     <tabTrigger>fields.Selection</tabTrigger>
