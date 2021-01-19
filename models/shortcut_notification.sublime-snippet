@@ -5,10 +5,13 @@ return {
     'tag': 'display_notification',
     'params': {
         'title': '${1:Title}',
-        'message': '${2:Message}',
+        'message': '${2:Message or link %s}',
         'type': '${3:info/warning/success/danger}',${4:
         'next': {'type': 'ir.actions.act_window_close'\},}${5:
-        'links': [{'label': record.name, 'url': f'#action={action.id\}&id={record.id\}&model=mrp.production'\}],}
+        'links': [{
+            'label': record.name,
+            'url': f'#action={action.id\}&id={record.id\}&model={record._name\}'
+        \}],}
         'sticky': False,
     }
 }
