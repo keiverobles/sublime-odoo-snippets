@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+action = self.env['ir.actions.actions']._for_xml_id('${1:module}.${2:xml_action_id}'')${0}
+]]></content>
+    <tabTrigger>action</tabTrigger>
+    <scope>source.python</scope>
+    <description>Return action safe for web use</description>
+</snippet>
