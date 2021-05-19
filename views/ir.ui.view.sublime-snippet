@@ -7,7 +7,7 @@
   <field name="mode">${4:primary}</field>
   <field name="priority" eval="${5:16}"/>
   <field name="active" eval="${6:True}"/>${8:
-  <field name="inherit_id" ref="${7:xml_id}"/>}
+  <field name="inherit_id" ref="${7:module.xml_id}"/>}
   <field name="arch" type="xml">
     ${0}
   </field>
