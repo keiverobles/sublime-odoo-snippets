@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+div class="text-center alert alert-${1:info}" role="alert" attrs="{'invisible': [('${2:field}', '${3:=}', ${4:False})]}">${5:Message to show}</div>${0}
+]]></content>
+  <tabTrigger>alert</tabTrigger>
+  <scope>text.xml</scope>
+  <description>Strip alert to show any message</description>
+</snippet>
