@@ -16,10 +16,8 @@
 <record id="${2/\./\_/g}_view_tree" model="ir.ui.view">
   <field name="name">${2/\.+/\./g}.tree</field>
   <field name="model">${2/\.+/\./g}</field>
-  <field name="type">tree</field>
   <field name="mode">primary</field>
   <field name="priority" eval="${7/(.)/\1/g}"/>
-  <field name="active" eval="True"/>
   <field name="arch" type="xml">
     <tree>
       <field name="${3/(.)/\1/g}"/>${0}
@@ -29,17 +27,14 @@
 <record id="${2/\./\_/g}_view_form" model="ir.ui.view">
   <field name="name">${2/\.+/\./g}.form</field>
   <field name="model">${2/\.+/\./g}</field>
-  <field name="type">form</field>
-  <field name="mode">primary</field>
   <field name="priority" eval="${7/(.)/\1/g}"/>
-  <field name="active" eval="True"/>
   <field name="arch" type="xml">
     <form string="${1/(.)/\1/g}">
       <sheet>
         <div class="oe_title">
           <label for="${3/(.)/\1/g}" class="oe_edit_only"/>
           <h1>
-            <field name="${3/(.)/\1/g}" required="1" class="oe_field_${3/(.)/\1/g}" placeholder="${3/((^.)|(_+))/(?2:\u$2)(?3:\ )/g}..."/>
+            <field name="${3/(.)/\1/g}" required="1" placeholder="${3/((^.)|(_+))/(?2:\u$2)(?3:\ )/g}..."/>
           </h1>
         </div>
       </sheet>
@@ -49,10 +44,7 @@
 <record id="${2/\./\_/g}_view_search" model="ir.ui.view">
   <field name="name">${2/\.+/\./g}.search</field>
   <field name="model">${2/\.+/\./g}</field>
-  <field name="type">search</field>
-  <field name="mode">primary</field>
   <field name="priority" eval="${7/(.)/\1/g}"/>
-  <field name="active" eval="True"/>
   <field name="arch" type="xml">
     <search string="Filter ${1/(.)/\1/g}">
       <field name="${3/(.)/\1/g}"/>
@@ -63,13 +55,12 @@
   <field name="name">${1/(.)/\1/g}s</field>
   <field name="res_model">${2/\.+/\./g}</field>
   <field name="view_mode">tree,form</field>
-  <field name="view_type">form</field>
   <field name="target">current</field>
   <field name="domain">${4/(.)/\1/g}</field>
   <field name="context">${5/(.)/\1/g}</field>
   <field name="search_view_id" ref="${2/\./\_/g}_view_search"/>
   <field name="help" type="html">
-    <p class="oe_view_nocontent_create/o_view_nocontent_smiling_face">
+    <p class="o_view_nocontent_empty_folder o_view_nocontent_smiling_face">
       Click in "Create" to add new ${1/(.)/\1/g}
     </p><p>
       ${9/(.)/\1/g}
