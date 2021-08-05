@@ -6,10 +6,11 @@ class ${1:ModelName}(models.Model):
     _name = '${3:${1/((^[A-Z])|([A-Z]))/(?2:\l$2)(?3:\.\l$3)/g}}'
     _description = '${4:${1/((^[A-Z])|([A-Z]))/(?2:\u$2)(?3:\ \l$3)/g}}'
     _rec_name = '${5:name}'
-    _order = '${6:id} DESC'
+    _order = '${6:sequence, id}${7: DESC}'
 
-    name = fields.Char('${7:Name}', size=50${8:, index=True})
+    name = fields.Char('${8:Name}', size=50)
     active = fields.Boolean('${9:Active}', default=True)
+    sequence = fields.Boolean('${10:Sequence}', default=${11:10})
 ${0}
 ]]></content>
     <tabTrigger>class</tabTrigger>

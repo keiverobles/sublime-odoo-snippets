@@ -3,7 +3,7 @@
 def action_view_${1:name}(self):
     """ ${2:docstring} """
     self.ensure_one()
-    action = self.env.ref('${3:module.xml_id}').read()[0]
+    action = self.env['ir.actions.actions']._for_xml_id('${3:module.xml_id}')
     action['domain'] = [
         ('${4:field_id}', '${5:=}', ${6:self.id}),
     ]

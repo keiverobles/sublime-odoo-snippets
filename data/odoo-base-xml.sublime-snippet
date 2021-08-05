@@ -1,14 +1,10 @@
 <snippet>
     <content><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="${1:1}">
+  ${0}
+</odoo>
 
-<openerp>
-    <data noupdate="${1:1}">
-
-        ${0}
-
-    </data>
-</openerp>
 ]]></content>
     <tabTrigger>odoo</tabTrigger>
     <scope>text.xml</scope>

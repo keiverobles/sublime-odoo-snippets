@@ -14,8 +14,7 @@ return {
         \}],}
         'sticky': False,
     }
-}
-${0}
+}${0}
 ]]></content>
     <tabTrigger>notification</tabTrigger>
     <scope>source.python</scope>

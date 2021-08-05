@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-button name="${1:function_name}" string="${2:string}" ${4:type="${3:object}"} ${5:special="cancel"} ${6:special="save"} ${7:class="btn-primary"}/>
+button name="${1:function_name}" string="${2:string}" ${4:type="${3:object}"} ${5:special="cancel,save"} ${6:icon="fa-info"} ${7:class="btn-primary"}/>
 ]]></content>
     <tabTrigger>button</tabTrigger>
     <scope>text.xml</scope>
