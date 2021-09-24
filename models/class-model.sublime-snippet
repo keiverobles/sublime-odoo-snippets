@@ -10,7 +10,7 @@ class ${1:ModelName}(models.Model):
 
     name = fields.Char('${8:Name}', size=50)
     active = fields.Boolean('${9:Active}', default=True)
-    sequence = fields.Boolean('${10:Sequence}', default=${11:10})
+    sequence = fields.Integer('${10:Sequence}', default=${11:10})
 ${0}
 ]]></content>
     <tabTrigger>class</tabTrigger>
