@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+menuitem
+  id="${1:res_model}_menu"
+  name="${2:String Name}"
+  web_icon="${3:module_name},static/description/icon.png"
+  parent="${4:base.menu_custom}"
+  action="${1/\./\_/g}_action"
+  sequence="${5:10}"/>${0}
+]]></content>
+    <tabTrigger>menuitem</tabTrigger>
+    <scope>text.xml</scope>
+    <description>Common menuitem tag definition</description>
+</snippet>
