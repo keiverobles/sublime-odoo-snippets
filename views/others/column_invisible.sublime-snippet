@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+attrs="{'column_invisible': [('${1:parent.field}', '${2:=}', ${3:False})]}"${0}
+]]></content>
+  <tabTrigger>column_invisible</tabTrigger>
+  <scope>text.xml</scope>
+  <description>Attribute column invisible</description>
+</snippet>
