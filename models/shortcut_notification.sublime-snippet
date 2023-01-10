@@ -1,5 +1,6 @@
 <snippet>
     <content><![CDATA[
+${6:action = self.env.ref('module.xml_action_id')}
 return {
     'type': 'ir.actions.client',
     'tag': 'display_notification',
