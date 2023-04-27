@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
 ${1:field_name}_id = fields.Many2one(
-    string='${2:${1/((^.)|(_(.)))/(?2:\u$2)(?3:\ $4)/g}}',
-    required=${3:False},
-    readonly=${4:False},
-    index=${5:False},
-    default=${6:None},
-    help=${7:False},
-    comodel_name='${8:model.name}',
+    comodel_name='${2:model.name}',
+    string='${3:${1/((^.)|(_(.)))/(?2:\u$2)(?3:\ $4)/g}}',
+    required=${4:False},
+    readonly=${5:False},
+    index=${6:False},
+    default=${7:None},
+    help=${8:False},
     domain=[${9}],
     context=\{${10}\},
     ondelete='${11:cascade}',
