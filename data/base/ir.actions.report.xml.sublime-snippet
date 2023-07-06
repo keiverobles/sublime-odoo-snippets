@@ -6,12 +6,12 @@
     <field name="report_type">${3:qweb-pdf}</field>
     <field name="report_name">${4:module.out_filename}</field>
     <field name="report_file">${4:module.out_filename}</field>
-    <field name="attachment_use" eval="${5:True}" />
+    <field name="attachment_use" eval="${5:True}"/>
     <field name="attachment">${6:(object.name+'.pdf')}</field>
-    <field name="paperformat_id" ref="${7:report.paperformat_euro}" />${9:
+    <field name="paperformat_id" ref="${7:report.paperformat_euro}"/>${9:
     <field name="help">${8:Something about ${1}}</field>}
-    <field name="print_report_name">${9:'Report - %s' % (object.name or 'Odoo').replace('/','')}</field>
-    <field name="binding_model_id" ref="model_${10:odoo_model}"/>
+    <field name="print_report_name">${10:'Report - %s' % (object.name or 'Odoo').replace('/','')}</field>
+    <field name="binding_model_id" ref="model_${11:odoo_model}"/>
     <field name="binding_type">report</field>
 </record>${0}
 ]]></content>
