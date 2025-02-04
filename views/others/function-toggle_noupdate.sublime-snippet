@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+${3}<function model="ir.model.data" name="toggle_noupdate">
+  <value>${1:model.model}</value>
+  <value eval="ref('${2:external.id}')"/>
+</function>
+${0}
+<function model="ir.model.data" name="toggle_noupdate">
+  <value>${1:model.model}</value>
+  <value eval="ref('${2:external.id}')"/>
+</function>
+]]></content>
+  <tabTrigger>toggle_noupdate</tabTrigger>
+  <scope>text.xml</scope>
+  <description>Toggle noupdate Function</description>
+</snippet>
